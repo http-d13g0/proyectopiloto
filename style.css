@@ -1,0 +1,184 @@
+*{	
+}
+body{
+	height: 100vh;
+	background: #1a0321;
+	font-family: helvetica;
+}
+h1{
+	vertical-align: middle;
+	color: white;
+	font-weight: bold;
+}
+#header{
+	text-align: center;
+  height:70px;
+  line-height: 20px;
+  background-color: #1a0321;
+  border: 2px solid #333;
+  border-color:  #a945c7;
+  border-radius: 50px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  overflow: hidden;
+}
+#header:before{
+	content: "";
+	position: absolute;
+	height: 300px;
+	width: 300px;
+	background-image: conic-gardient(#a945c7 20deg, transparent 120 deg);
+	animation: rotar 2s linear infinite;
+}
+@keyframes right{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+@keyframes animateBorder {
+  0% {
+  	box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+    border-color: #a945c7;
+  }
+  50% {
+    border-color: #1a0321;
+  }
+  100% {
+    border-color: #a945c7;
+  }
+}
+#header{
+  animation: 4s animateBorder 1;
+}
+select{
+	position: relative;
+	border: none;
+	border-radius: 10px;
+	background-color: #1a0321;
+	display: inline-block;
+	padding: 5px 10px;
+	color: #fff;
+	letter-spacing: 3px;
+	font-size: 14px;
+	text-decoration: none;
+	overflow: hidden;
+	transition: 0.2s;
+	cursor: pointer;
+}
+select:hover{
+	background: #a945c7;
+	box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+	transition-delay: 0.3s;
+
+}
+option{
+	position: relative;
+	border: none;
+	border-radius: 10px;
+	background-color: #1a0321;
+	display: inline-block;
+	padding: 5px 10px;
+	color: #fff;
+	letter-spacing: 3px;
+	font-size: 14px;
+	text-decoration: none;
+	overflow: hidden;
+	transition: 0.2s;
+	cursor: pointer;
+}
+option:hover{
+	background: #a945c7;
+	box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+	transition-delay: 0.3s;
+
+}
+button{
+	position: relative;
+	border: none;
+	background-color: #1a0321;
+	display: inline-block;
+	padding: 5px 10px;
+	color: #fff;
+	letter-spacing: 3px;
+	font-size: 14px;
+	text-decoration: none;
+	overflow: hidden;
+	transition: 0.2s;
+	cursor: pointer;
+}
+button:hover{
+	background: #a945c7;
+	box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+	transition-delay: 0.3s;
+
+}
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #4CAF50;
+  box-sizing: border-box;
+  float: right;
+  transform: translate(-100%, 0);
+  transition: transform 0.3s ease-out;
+}
+
+.button:hover::before {
+  transform: translate(0, 0);
+}
+
+label{
+	font-size: consolas;
+	color: #fff;
+}
+.row{
+	margin: 10px 20x;
+	font-size: consolas;
+	color: #fff;
+}
+#results{
+	margin: 30px 20px 10px 0px;
+}
+.person-row{
+	margin: 20px 0px;
+	padding: 30px;
+	width: 100%;
+	background-color: #1a0321;
+}
+.person-row img{
+	float: left; 
+	margin-right: 30px;
+}
+.person-info{
+	float: left;
+	font-size: consolas;
+	color: #fff;
+}
+.person-row{
+	margin: 10px 0px;
+	padding: 10px;
+	width: 100%;
+	float: left;
+	background-color: #1a0450;
+	background: linear-gradient(10deg,  rebeccapurple, #1a0321);
+	border-radius: 5px;
+}
+.person-row img{
+	float: left;
+	margin-right: 20px;
+}
+.person-info{
+	float: left;
+}
+
+.person-row > button{
+	float: right;
+}
